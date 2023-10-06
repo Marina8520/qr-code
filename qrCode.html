@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Generation of the QR-code</title>
+</head>
+<body>
+    <section>
+        <h1>Generation of the QR-code</h1>
+        <p class="description">Enter the adress of&nbsp;your site in&nbsp;the field below and click the button &rsquo;Generate&rsquo;.
+            After this you will see the generated Qr-code.
+            You can copy it&nbsp;or&nbsp;save by&nbsp;right-clicking on&nbsp;it&nbsp;and selecting the appropriate menu item.</p>
+    </section>
+
+    <section class="form">
+        <input type="url" name="url" placeholder="https://www.google.com">
+        <button>Generate</button>
+    </section>
+
+    <section>
+        <div class="error-message"></div>
+        <hr>
+    </section>
+
+    <section class="qrcode-container">
+        <div id="qrcode"></div>
+    </section>
+
+
+    <script type="text/javascript" src="qrcode.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
